@@ -55,6 +55,27 @@ public class Menu : MonoBehaviour
         }
     }
 
+    public void setRounds(int round)
+    {
+        switch (round)
+        {
+            case 0:
+                Corredor.rondas = 3;
+                Debug.Log("3 rondas");
+                break;
+            case 1:
+                Corredor.rondas = 5;
+                Debug.Log("5 rondas");
+                break;
+            case 2:
+                Corredor.rondas = 7;
+                Debug.Log("7 rondas");
+                break;
+            default:
+                mapa = 0;
+                break;
+        }
+    }
 
 
 
