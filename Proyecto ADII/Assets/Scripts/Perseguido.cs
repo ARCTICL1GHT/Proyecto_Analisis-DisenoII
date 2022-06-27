@@ -50,7 +50,8 @@ public class Perseguido : MonoBehaviour
         }
         // timer
         tiempoactual -= 1 * Time.deltaTime;
-        contador.text = "Tiempo: " + tiempoactual.ToString("0");
+        contador.text = "Tiempo: "
+            + tiempoactual.ToString("0");
 
         if (tiempoactual <= 0)
         {
