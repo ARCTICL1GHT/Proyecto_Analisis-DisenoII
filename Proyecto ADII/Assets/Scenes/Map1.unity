@@ -2354,6 +2354,7 @@ GameObject:
   - component: {fileID: 1932591833}
   - component: {fileID: 1932591832}
   - component: {fileID: 1932591836}
+  - component: {fileID: 1932591837}
   m_Layer: 0
   m_Name: corredor
   m_TagString: corredor
@@ -2499,9 +2500,29 @@ MonoBehaviour:
   speed: 5
   izquierda: {fileID: 1845283757, guid: 90442dcac15bab0459139b102cf5f71f, type: 3}
   derecha: {fileID: -1812851562, guid: 90442dcac15bab0459139b102cf5f71f, type: 3}
-  centro: {fileID: -1446084357, guid: 90442dcac15bab0459139b102cf5f71f, type: 3}
+  centro: {fileID: 792770350, guid: 90442dcac15bab0459139b102cf5f71f, type: 3}
   perseguido: {fileID: 1513701895}
   ganadas: 0
+--- !u!95 &1932591837
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932591831}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3026b1ca46a56074ea3bcddd3685ad0a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &560328485643587866
 PrefabInstance:
   m_ObjectHideFlags: 0
