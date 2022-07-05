@@ -103,7 +103,7 @@ public class Corredor : MonoBehaviour
 
     public void starPosition()
     {
-        transform.position = new Vector3(-8.78f, 1.94f, 0);
+        transform.position = new Vector3(-7.78f, 1.94f, 0);
         perseguido.starPosition();
     }
 

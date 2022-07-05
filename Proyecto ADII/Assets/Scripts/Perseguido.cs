@@ -102,7 +102,7 @@ public class Perseguido : MonoBehaviour
 
     public void starPosition()
     {
-        transform.position = new Vector3(7.51f, -3.57f, 0);
+        transform.position = new Vector3(6.51f, -3.57f, 0);
         
     }
 }
