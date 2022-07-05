@@ -20,11 +20,11 @@ public class Menu : MonoBehaviour
                 SceneManager.LoadScene("Map1");
                 break;
             case 1:
-                //SceneManager.LoadScene("Map1");
+                SceneManager.LoadScene("Map2");
                 Debug.Log("Mapa 2");
                 break;
             case 2:
-                //SceneManager.LoadScene("Map1");
+                SceneManager.LoadScene("Grande");
                 Debug.Log("Mapa 3");
                 break;
             default:

@@ -4,10 +4,19 @@ using UnityEngine;
 
 public class Portal : MonoBehaviour
 {
-    [SerializeField] private Transform destination;
-    public Transform GetDestination()
+    public GameObject portal;
+    private GameObject player;
+    // Start is called before the first frame update
+    void Start()
     {
-        return destination;
+        player = GameObject.FindWithTag("perseguido");
+    }
+
+    // Update is called once per frame
+    private void OnTriggerEnter2D(Collider2D collision){
+        if(collision.tag == "perseguido"){
+            player.transform.position = new Vector2(portal.transform.position.x, portal.transform.position.y);
+     }
     }
     
 }

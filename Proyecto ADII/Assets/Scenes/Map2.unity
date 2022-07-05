@@ -859,27 +859,14 @@ GameObject:
   - component: {fileID: 316642987}
   - component: {fileID: 316642986}
   - component: {fileID: 316642985}
-  - component: {fileID: 316642984}
+  - component: {fileID: 316642988}
   m_Layer: 0
   m_Name: portal verde (2)
-  m_TagString: Teleporter
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &316642984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 316642983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c02a24567eb98bd4fb4d55b50d5e888c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destination: {fileID: 972777905}
 --- !u!61 &316642985
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -973,6 +960,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &316642988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316642983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c02a24567eb98bd4fb4d55b50d5e888c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portal: {fileID: 972777901}
 --- !u!4 &332272950 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 447514280683312008, guid: 386ff2508869c2e439f731d530ca51bc, type: 3}
@@ -1040,7 +1040,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -668118161, guid: 5c1072fc25e9255428b770cef275871c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2609,7 +2609,7 @@ GameObject:
   - component: {fileID: 972777908}
   m_Layer: 0
   m_Name: portal verde (1)
-  m_TagString: Teleporter
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2719,7 +2719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c02a24567eb98bd4fb4d55b50d5e888c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destination: {fileID: 316642987}
+  portal: {fileID: 0}
 --- !u!1 &1057171054
 GameObject:
   m_ObjectHideFlags: 0
@@ -2941,7 +2941,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 690810882, guid: 5c1072fc25e9255428b770cef275871c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4192,7 +4192,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 1976014692, guid: 5c1072fc25e9255428b770cef275871c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4688,9 +4688,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contador: {fileID: 788632797}
   speed: 5
-  izquierda: {fileID: -75744987, guid: af2b3573d75f95643a9e3da70e5f75e5, type: 3}
+  izquierda: {fileID: 1365334038, guid: 90442dcac15bab0459139b102cf5f71f, type: 3}
   derecha: {fileID: -1437885359, guid: 90442dcac15bab0459139b102cf5f71f, type: 3}
-  centro: {fileID: -75744987, guid: af2b3573d75f95643a9e3da70e5f75e5, type: 3}
+  centro: {fileID: 792770350, guid: 90442dcac15bab0459139b102cf5f71f, type: 3}
   corredor: {fileID: 1932591836}
   ganadas: 0
 --- !u!50 &1513701896
@@ -4731,7 +4731,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.28}
+    oldSize: {x: 0.62, y: 0.44}
     newSize: {x: 0.6, y: 0.45}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4788,8 +4788,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -75744987, guid: af2b3573d75f95643a9e3da70e5f75e5, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 792770350, guid: 90442dcac15bab0459139b102cf5f71f, type: 3}
+  m_Color: {r: 0, g: 0.9339623, b: 0.16743055, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4807,8 +4807,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1513701894}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.288, y: -3.584, z: 0}
-  m_LocalScale: {x: 3.0746171, y: 2.9602883, z: 1}
+  m_LocalPosition: {x: 8.31, y: -3.72, z: 0}
+  m_LocalScale: {x: 1.1526436, y: 1.3317394, z: 0.99970704}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -5894,7 +5894,6 @@ GameObject:
   - component: {fileID: 1932591833}
   - component: {fileID: 1932591832}
   - component: {fileID: 1932591836}
-  - component: {fileID: 1932591838}
   - component: {fileID: 1932591837}
   m_Layer: 0
   m_Name: corredor
@@ -6064,19 +6063,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1932591838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1932591831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f36d78e6139ae249b117ec21a0675da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentTeleporter: {fileID: 0}
 --- !u!1 &1940639082
 GameObject:
   m_ObjectHideFlags: 0
